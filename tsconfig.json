@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "strict": true,
+    "strictNullChecks": true,
+    "removeComments": true,
+    "noImplicitAny": true,
+    "declaration": true,
+    "sourceMap": true
+  },
+  "exclude": ["node_modules"]
+}
