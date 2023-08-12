@@ -5,6 +5,10 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
+  "repository": {
+    "url": "https://github.com/Ariaszzzhc/morph-async"
+  },
+  "homepage": "https://github.com/Ariaszzzhc/morph-async",
   "scripts": {
     "build": "tsc",
     "test": "node --test --loader ts-node/esm tests/*.ts"

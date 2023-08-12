@@ -1,4 +1,4 @@
-# Async Helpers
+# @morph/async
 
 this project currently is a port of deno std async libs for nodejs
 
