@@ -9,7 +9,9 @@
     "removeComments": true,
     "noImplicitAny": true,
     "declaration": true,
-    "sourceMap": true
+    "sourceMap": true,
+    "outDir": "./dist"
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*"]
 }
