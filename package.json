@@ -1,7 +1,7 @@
 {
   "name": "async-helpers",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "async helper functions for nodejs",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
