@@ -7,7 +7,7 @@ this project currently is a port of deno std async libs for nodejs
 ## delay
 
 ```typescript
-import { delay } from "async-helpers";
+import { delay } from "@morph/asyncs";
 
 const delayedPromise = delay(100);
 const result = await delayedPromise;
@@ -16,7 +16,7 @@ const result = await delayedPromise;
 ## deferred
 
 ```typescript
-import { deferred } from "async-helpers";
+import { deferred } from "@morph/asyncs";
 
 const p = deferred<number>();
 // ...
@@ -26,7 +26,7 @@ p.resolve(42);
 ## abortable
 
 ```typescript
-import { abortable, delay } from "async-helpers";
+import { abortable, delay } from "@morph/asyncs";
 
 const p = delay(1000);
 const c = new AbortController();
@@ -39,7 +39,7 @@ await abortable(p, c.signal);
 ## deadline
 
 ```typescript
-import { deadline, delay } from "async-helpers";
+import { deadline, delay } from "@morph/asyncs";
 
 const delayedPromise = delay(1000);
 // Below throws `DeadlineError` after 10 ms
@@ -49,7 +49,7 @@ const result = await deadline(delayedPromise, 10);
 ## MuxAsyncIterator
 
 ```typescript
-import { MuxAsyncIterator } from "async-helpers";
+import { MuxAsyncIterator } from "@morph/asyncs";
 
 async function* gen123(): AsyncIterableIterator<number> {
   yield 1;
@@ -74,7 +74,7 @@ for await (const value of mux) {
 ## retry
 
 ```typescript
-import { retry } from "async-helpers";
+import { retry } from "@morph/asyncs";
 const req = async () => {
   // some function that throws sometimes
 };
@@ -90,7 +90,7 @@ const retryPromise = await retry(req, {
 ```
 
 ```typescript
-import { retry } from "async-helpers";
+import { retry } from "@morph/asyncs";
 const req = async () => {
   // some function that throws sometimes
 };

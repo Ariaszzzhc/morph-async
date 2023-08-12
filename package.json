@@ -1,5 +1,5 @@
 {
-  "name": "async-helpers",
+  "name": "@morph/async",
   "version": "0.1.0",
   "description": "async helper functions for nodejs",
   "main": "dist/index.js",
